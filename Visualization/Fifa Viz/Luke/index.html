@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171 - HW 5</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>FIFA World Cup<sup>TM</sup></h1>
+		<h2>All Time Statistics</h2>
+
+		<!--<form class="form-inline">
+			<div class="form-group">
+			<label for="yearSelect">Year Select</label>
+			    <label for="startingYear">New Starting Year</label>
+    			<input type="date" class="form-control" id="startingYear">
+			    <label for="endingYear">New Ending Year</label>
+			    <input type="date" class="form-control" id="endingYear">
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+
+		</form> -->
+
+		<form class="form-inline">
+			<div class="form-group">
+		    <label for="rankingType">Filter by Goals</label>
+			    <select class="form-control" id="ranking-type">
+					  <option value="GOALS">Goals</option>
+					  <option value="AVERAGE_GOALS">Average Goals</option>
+					  <option value="MATCHES">Matches</option>
+					  <option value="TEAMS">Teams</option>
+					  <option value="AVERAGE_ATTENDANCE">Average Attendance</option>
+				</select>
+		    </div>
+		</form>
+	</div>
+
+		<!-- Parent container for the visualization -->
+	<div class ="container-fluid">
+      <div class="row">
+		<div class="col-md-8" id="chart-area"></div>
+            <div class ="col-md-4">
+              <table class="table">
+                <th id="edition"></th>
+                <tr>
+                  <td>Year</td>
+                  <td id ="year"></td>
+                </tr>
+                 <tr>
+                  <td>Winner</td>
+                  <td id = "winner"></td>
+                </tr>
+                <tr>
+                  <td>Teams</td>
+                  <td id = "teams"></td>
+                </tr>
+                <tr>
+                  <td>Matches</td>
+                  <td id = "matches"></td>
+                </tr>
+                <tr>
+                  <td>Goals</td>
+                  <td id = "goals"></td>
+                </tr>
+                <tr>
+                  <td>Average Goals</td>
+                  <td id = "average-goals"></td>
+                </tr>
+                  <tr>
+                  <td>Average Attendance</td>
+                  <td id = "average-attendance"></td>
+                </tr>
+              </table>
+            </div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<form class="form-inline">
+					<div class="form-group">
+						<label id="timePeriod">Time Period:</label>
+				            <div class="form-group">
+				                <input type="text" class="form-control" id="fromYear" value ="1930">
+				                <input type="text" class="form-control" id="toYear" value="2015">
+				                <button type="button" class="btn btn-link" id="filterYear">
+								<i class="glyphicon glyphicon-filter"></i> Filter</button>
+				            </div>
+					</div>
+			    </form> 
+	        </div>
+	    </div>
+	</div>
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+	<!-- Your implementation -->
+	<script src="js/main.js"></script>
+</body>
+</html>

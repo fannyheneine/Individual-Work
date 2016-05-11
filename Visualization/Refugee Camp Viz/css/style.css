@@ -1,0 +1,53 @@
+
+
+/**** ADD YOUR STYLES ****/
+
+.area{
+  fill:#FEE0C6;
+  stroke:steelblue
+}
+
+.rect {
+  fill:#FEE0C6;
+}
+
+.container1{
+  font-family: 'Open Sans',sans-serif;
+  font-size:35px;
+  background-color:white;
+  color:black;
+
+}
+
+.axis path{
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+/****************/
+/*   BAR-CHART  */
+/****************/
+
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line,
+.domain {
+  fill: none;
+  stroke: #888;
+  shape-rendering: crispEdges;
+}
+
+#chart-area text {
+  font-size: 11px;
+}
+
+.axis-label {
+  fill: #888;
+  font-size: 10px;
+}

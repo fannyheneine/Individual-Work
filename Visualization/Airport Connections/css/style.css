@@ -1,0 +1,14 @@
+body{
+    font-family:verdana,arial,sans-serif;
+    font-size:100%;
+    margin:3em;
+    background:teal;
+    color:#fff;
+}
+
+h1 {
+    font-family:verdana,arial,sans-serif;
+    color:yellow;
+    margin-left:20px;
+    text-align: center;
+}
